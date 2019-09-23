@@ -24,7 +24,7 @@ class Triangle
   def is_triangle?
     all_sides = [side1,side2,side3]
     
-    if all_sides.reduce == 0 || all_sides.any?{|side| side < 0 }
+    if all_sides.reduce(:+) == 0 || all_sides.any?{|side| side < 0 }
       raise TriangleError
     end 
   end 
