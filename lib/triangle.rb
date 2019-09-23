@@ -19,7 +19,7 @@ class Triangle
       :isosceles
     elsif side1 != side2 && side2 != side3 && side3 != side1
       :scalene
-    elsif all_sides.reduce == 0 || all_sides.any?
+    elsif all_sides.reduce == 0 || all_sides.any?{|side| side < 0} 
       raise TriangleError
     end 
   end 
