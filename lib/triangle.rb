@@ -25,11 +25,9 @@ class Triangle
     if all_sides.reduce == 0 || all_sides.any?{|side| side < 0 }
       raise TriangleError
     end 
-    
   end 
   
   class TriangleError < StandardError 
-    
   end 
   
   
