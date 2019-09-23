@@ -22,8 +22,6 @@ class Triangle
     elsif all_sides.reduce == 0 
       raise TriangleError
     end 
-    
-    binding.pry 
   end 
   
   class TriangleError < StandardError 
