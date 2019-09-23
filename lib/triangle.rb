@@ -19,8 +19,8 @@ class Triangle
       :isosceles
     elsif side1 != side2 && side2 != side3 && side3 != side1
       :scalene
-    elsif 
-      
+    elsif all_sides.reduce == 0 
+      raise TriangleError
     end 
   end 
   
